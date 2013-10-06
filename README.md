@@ -18,3 +18,20 @@ Using a custom layout:
 site.plug(require('kerouac-blog')('blog', { layout: 'blog' }));
 site.plug(require('kerouac-blog-index')({ layout: 'blog-index' }));
 ```
+
+## Layouts
+
+A default layout is suplied and used by default. Custom layouts can be defined as well, example:
+
+```html
+<% layout('../layout') -%>
+
+<section>
+	<ul class="posts">
+	  <% posts.forEach(function(post){ %>
+	    <li><a href="<%- post.url -%>"><%- post.title || post.url -%></a></li>
+	  <% }) %>
+	</ul>
+</section>
+```
+
