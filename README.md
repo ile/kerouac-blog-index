@@ -9,14 +9,14 @@ In `site.js`, using a default layout:
 
 ```javascript
 site.plug(require('kerouac-blog')('blog', { layout: 'blog' }));
-site.plug(require('kerouac-blog-index')());
+site.plug(require('kerouac-blog-index')('blog'));
 ```
 
 Using a custom layout:
 
 ```javascript
 site.plug(require('kerouac-blog')('blog', { layout: 'blog' }));
-site.plug(require('kerouac-blog-index')({ layout: 'blog-index' }));
+site.plug(require('kerouac-blog-index')('blog', { layout: 'blog-index' }));
 ```
 
 ## Layouts
