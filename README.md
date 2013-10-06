@@ -1,7 +1,7 @@
 kerouac-blog-index
 ==================
 
-For creating a blog index in kerouac.
+For creating a blog index in [kerouac](https://github.com/jaredhanson/kerouac).
 
 ## Usage
 
